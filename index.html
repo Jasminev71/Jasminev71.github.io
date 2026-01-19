@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jasmine Villarreal | QA / SDET Portfolio</title>
+  <meta name="description" content="QA / SDET portfolio: automation, API testing, and projects." />
+  <style>
+    :root { --max: 980px; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; }
+    header { padding: 56px 20px 28px; border-bottom: 1px solid #eee; }
+    main { max-width: var(--max); margin: 0 auto; padding: 28px 20px 56px; }
+    h1 { margin:0 0 10px; font-size: 2rem; }
+    h2 { margin: 28px 0 12px; font-size: 1.25rem; }
+    p { margin: 10px 0; }
+    .tag { display:inline-block; padding: 4px 10px; border:1px solid #ddd; border-radius: 999px; margin: 6px 6px 0 0; font-size: .9rem; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .card { border:1px solid #eee; border-radius: 14px; padding: 16px; }
+    .card h3 { margin:0 0 6px; font-size: 1.05rem; }
+    .links a { margin-right: 12px; }
+    a { color: inherit; text-underline-offset: 3px; }
+    footer { border-top:1px solid #eee; padding: 18px 20px; }
+    .muted { color:#555; }
+    .btn { display:inline-block; padding:10px 14px; border:1px solid #111; border-radius: 12px; text-decoration:none; }
+    .btn:hover { opacity: .85; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <main>
+      <h1>Jasmine Villarreal</h1>
+      <p class="muted">QA Engineer / SDET (Automation • API Testing • Mobile)</p>
+
+      <p>
+        I build reliable test coverage using automation and strong test design.
+        I’m focusing on Playwright/WDIO, API testing (Postman), and mobile QA.
+      </p>
+
+      <div class="links">
+        <a class="btn" href="https://github.com/jasminev71" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:your@email.com">Email</a>
+      </div>
+
+      <div style="margin-top:14px">
+        <span class="tag">Playwright</span>
+        <span class="tag">WebDriverIO</span>
+        <span class="tag">Postman</span>
+        <span class="tag">Java</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Android</span>
+      </div>
+    </main>
+  </header>
+
+  <main>
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid">
+
+        <div class="card">
+          <h3>ThriftBooks Automation Suite (WDIO)</h3>
+          <p class="muted">End-to-end UI automation with Page Object Model + reusable helpers.</p>
+          <p><b>Highlights:</b> search/filter tests, edge cases, stable selectors, reporting.</p>
+          <p class="links">
+            <a href="https://github.com/jasminev71/REPO_NAME" target="_blank" rel="noreferrer">Repo</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>API Test Plan + Postman Collection</h3>
+          <p class="muted">API validation, negative testing, and environments/variables.</p>
+          <p><b>Highlights:</b> assertions, auth patterns, test data, documentation.</p>
+          <p class="links">
+            <a href="https://github.com/jasminev71/REPO_NAME" target="_blank" rel="noreferrer">Repo</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>CS 360 Mobile App + Testing Harness (CS 499)</h3>
+          <p class="muted">Capstone direction: test execution + storing results for review over time.</p>
+          <p><b>Highlights:</b> automated tests, tracking pass/fail trends, QA-first design.</p>
+          <p class="links">
+            <a href="https://github.com/jasminev71/REPO_NAME" target="_blank" rel="noreferrer">Repo</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p><b>Testing:</b> test planning, test cases, exploratory testing, regression, UAT, bug reporting</p>
+      <p><b>Automation:</b> Playwright (JS), WebDriverIO, POM, selectors, assertions</p>
+      <p><b>API:</b> Postman, request/response validation, environments, basic auth concepts</p>
+      <p><b>Tools:</b> Git/GitHub, Jira, VS Code, Android Studio</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>Location: Utah (open to remote/hybrid)</p>
+    </section>
+  </main>
+
+  <footer>
+    <main>
+      <p class="muted">© <span id="year"></span> Jasmine Villarreal</p>
+    </main>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<style>
+  :root{
+    --max: 980px;
+
+    /* Colors */
+    --bg: #0b0f19;
+    --surface: rgba(255,255,255,.06);
+    --surface2: rgba(255,255,255,.09);
+    --border: rgba(255,255,255,.12);
+    --text: rgba(255,255,255,.92);
+    --muted: rgba(255,255,255,.72);
+
+    /* Accents */
+    --accent: #7c3aed;     /* purple */
+    --accent2: #22c55e;    /* green */
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+    --radius: 18px;
+  }
+
+  *{ box-sizing: border-box; }
+  html, body{ height: 100%; }
+
+  body{
+    margin:0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background:
+      radial-gradient(900px 400px at 15% 5%, rgba(124,58,237,.35), transparent 60%),
+      radial-gradient(800px 420px at 85% 10%, rgba(34,197,94,.20), transparent 60%),
+      radial-gradient(700px 500px at 50% 90%, rgba(59,130,246,.18), transparent 60%),
+      var(--bg);
+  }
+
+  /* Layout */
+  header{
+    padding: 64px 20px 28px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    background: linear-gradient(to bottom, rgba(255,255,255,.03), transparent);
+  }
+
+  main{
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+  }
+
+  /* Type */
+  h1{
+    margin: 0 0 10px;
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  h2{
+    margin: 36px 0 14px;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+  }
+
+  p{ margin: 10px 0; }
+
+  .muted{ color: var(--muted); }
+
+  /* Links */
+  a{
+    color: inherit;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(255,255,255,.35);
+  }
+  a:hover{ text-decoration-color: rgba(255,255,255,.75); }
+
+  /* Buttons row */
+  .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.18);
+    background: rgba(255,255,255,.06);
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,.18);
+    backdrop-filter: blur(10px);
+    transition: transform .15s ease, background .15s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+
+  .btn:hover{
+    transform: translateY(-1px);
+    background: rgba(255,255,255,.10);
+    border-color: rgba(255,255,255,.28);
+    box-shadow: 0 10px 24px rgba(0,0,0,.26);
+  }
+
+  .btn:active{ transform: translateY(0px); }
+
+  /* Tags */
+  .tag{
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px;
+    margin: 8px 8px 0 0;
+    font-size: .9rem;
+    color: rgba(255,255,255,.84);
+    background: rgba(255,255,255,.04);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Grid + Cards */
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin-top: 10px;
+  }
+
+  .card{
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: var(--radius);
+    padding: 16px;
+    background: rgba(255,255,255,.06);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    transition: transform .18s ease, border-color .18s ease, background .18s ease;
+  }
+
+  .card:hover{
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,.22);
+    background: rgba(255,255,255,.08);
+  }
+
+  .card h3{
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+  }
+
+  .card .links a{
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+    text-decoration: none;
+  }
+
+  .card .links a:hover{
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.22);
+  }
+
+  /* Sections feel separated */
+  section{
+    padding-top: 4px;
+  }
+
+  /* Footer */
+  footer{
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding: 18px 20px;
+    background: rgba(255,255,255,.02);
+  }
+
+  /* Small screens */
+  @media (max-width: 520px){
+    header{ padding-top: 52px; }
+    .btn{ width: 100%; }
+  }
+
+  /* Motion preference */
+  @media (prefers-reduced-motion: reduce){
+    *{ transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
